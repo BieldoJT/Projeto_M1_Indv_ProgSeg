@@ -87,6 +87,7 @@ def mostra_resultado(resultado):
     if resultado:
         print("\nCandidatos compatíveis encontrados:")
         print(tabulate(resultado, headers=["Nome", "Notas"]))
+        print('\n')
     else:
         print("\nNenhum candidato compatível encontrado.")
     
