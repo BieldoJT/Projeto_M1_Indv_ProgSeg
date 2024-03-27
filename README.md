@@ -46,8 +46,8 @@ Aqui está um exemplo de uso do programa:
 
    Resultado:
 
-   Nome  | Notas
-------|---------------
-Maria | e8_t7_p9_s6
-João  | e6_t8_p7_s5
+      Nome  | Notas
+      ------|---------------
+      Maria | e8_t7_p9_s6
+      João  | e6_t8_p7_s5
 
