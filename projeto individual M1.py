@@ -1,5 +1,9 @@
 from tabulate import tabulate
 
+
+candidatos = {'Gabriel': 'e2_t5_p6_s4', 'Matheus': 'e7_t5_p2_s6', 'Rodrigo': 'e5_t4_p9_s8'}
+
+
 def menu():
     print('\nOlá, tudo bem? O que você deseja fazer?')
     print('Digite 0 para adicionar novos candidatos.')
@@ -98,9 +102,8 @@ def main():
     
     
     
-    candidatos = {'Gabriel': 'e2_t5_p6_s4', 'Matheus': 'e7_t5_p2_s6', 'Rodrigo': 'e5_t4_p9_s8'}
-    #adicionar os candidatos e suas notas
     
+    #Looping para funcionamento do programa
     while True:
         escolha = menu()
         
@@ -112,8 +115,7 @@ def main():
             criterios = solicita_criterio()
             resultado_candidatos = buscar_candidatos(criterios,candidatos)
             mostra_resultado(resultado_candidatos)
-            break
-            
+            break 
             
         else:
             print('\nOpção inválida. Por favor, escolha 0 ou 1.')
