@@ -46,8 +46,4 @@ Nome  | Notas
 ------|---------------
 Maria | e8_t7_p9_s6
 João  | e6_t8_p7_s5
-Contribuição
-Se você quiser contribuir para este projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Licença
-Este projeto está licenciado sob a MIT License.
