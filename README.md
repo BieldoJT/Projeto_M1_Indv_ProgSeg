@@ -15,7 +15,7 @@ Certifique-se de ter o Python instalado em sua máquina. Este código foi testad
 
 ## Uso
 
-Execute o arquivo `sistema_gerenciamento_candidatos.py` para iniciar o programa. Você será apresentado a um menu com duas opções:
+Execute o arquivo `projeto individual M1.py` para iniciar o programa. Você será apresentado a um menu com duas opções:
 
 1. **Adicionar Novos Candidatos:** Permite adicionar novos candidatos com suas respectivas notas.
 2. **Inserir Critérios e Obter Resultados:** Permite inserir critérios mínimos desejados para cada etapa e obter uma lista de candidatos compatíveis.
