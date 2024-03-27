@@ -1,9 +1,5 @@
 from tabulate import tabulate
 
-
-candidatos = {'Gabriel': 'e2_t5_p6_s4', 'Matheus': 'e7_t5_p2_s6', 'Rodrigo': 'e5_t4_p9_s8'}
-
-
 def menu():
     print('\nOlá, tudo bem? O que você deseja fazer?')
     print('Digite 0 para adicionar novos candidatos.')
@@ -59,6 +55,9 @@ def solicita_criterio():
     print("\nDigite as avaliações mínimas desejadas para cada etapa (entrevista, teste teórico, teste prático, avaliação de soft skills):")
     for etapa in ["entrevista", "teste teórico", "teste prático", "avaliação de soft skills"]:
         criterio = int(input(f"Avaliação mínima na {etapa}: "))
+        while criterio > 10 or criterio < 0:
+            print('\nNumero Inválido! Insira um número de 0 a 10! \n')
+            criterio = int(input(f"Avaliação mínima na {etapa}: "))
         criterios.append(criterio)
     return criterios
 
@@ -102,8 +101,9 @@ def main():
     
     
     
+    candidatos = {'Gabriel': 'e2_t5_p6_s4', 'Matheus': 'e7_t5_p2_s6', 'Rodrigo': 'e5_t4_p9_s8'}
+    #adicionar os candidatos e suas notas
     
-    #Looping para funcionamento do programa
     while True:
         escolha = menu()
         
@@ -115,7 +115,8 @@ def main():
             criterios = solicita_criterio()
             resultado_candidatos = buscar_candidatos(criterios,candidatos)
             mostra_resultado(resultado_candidatos)
-            break 
+            break
+            
             
         else:
             print('\nOpção inválida. Por favor, escolha 0 ou 1.')
